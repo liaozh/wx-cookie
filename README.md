@@ -12,4 +12,7 @@
 import './utils/wx-cookie'
 ```
 
+### 功能
+暂时只支持后端返回的cookie,不支持手动读取和设置cookie
+
 功能待完善...

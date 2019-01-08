@@ -2,7 +2,7 @@
  * @Author: lzh
  * @Date: 2018-12-28 09:17:48
  * @LastEditors: lzh
- * @LastEditTime: 2019-01-05 15:49:56
+ * @LastEditTime: 2019-01-08 19:58:14
  * @Description: 微信小程序支持cookie
  */
 
@@ -59,7 +59,7 @@ const wxCookie = (function (wx, request) {
   }
   // 支持设置别名
   wxCookie.config = function (options = {requestAlias: 'wxCookie'}) {
-    Object.defineProperties(wx, options.requestAlias, requestProx)
+    Object.defineProperty(wx, options.requestAlias, requestProx)
   }
   return wxCookie
 })(wx, wx.request)
